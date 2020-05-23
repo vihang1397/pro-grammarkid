@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Starbuzz Bean Machine</title>
+        <link type="text/css" rel="stylesheet" href="styledform.css">
+        <link type="text/css" rel="stylesheet" href="starbuzz.css">
+    </head>
+    <body>
+        <header id="top">
+            <img id="logo" src="images/headerlogo.gif" alt="StartBuzz Coffee HeaderLogo image">
+            <img id="slogan" src="images/headerslogan.gif" alt="StartBuzz Coffee HeaderSlogan image">
+        </header>
+        
+        <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="">Inventions</a></li>
+                    <li class="selected"><a href="form.html">Order</a></li>
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="">Locations</a></li>
+                </ul>
+        </nav>
+        
+        <div id="award">
+                <img src="images/award.gif" alt="Roaster of the Year award">
+        </div>
+        
+        <div id="tablecontent">
+            <div id="tablerow">
+                
+                <section id="drinks">
+                    <h1>BEVERAGES</h1>
+                    <p>House Blend, $1.49</p>
+                    <p>Mocha Cafe Latte, $2.35</p>
+                    <p>Cappuccino, $1.89</p>
+                    <p>Chai Tea, $1.85</p>
+                    <h1>ELIXIRS</h1>
+                    <p>We proudly serve elixirs brewed by our friends at Head First Lounge</p>
+                    <p>Green Tea Cooler, $2.99</p>
+                    <p>Raspberry Ice Concentration, $2.99</p>
+                    <p>Blueberry Bliss Elixir, $2.99</p>
+                    <p>Cranberry Antioxidanty Blast, $2.99</p>
+                    <p>Chai Chiller, $2.99</p>
+                    <p>Black Brain Brew, $2.99</p>
+                </section>
+        
+                <section id="main">
+                    <h1>The Starbuzz Bean Machine</h1>
+                    <h2>Fill out the form below and click "Order Now" to order</h2>
+                    <form action="http://Starbuzzcoffee.com/processorder.php" method="post">
+                        <div class="tablerow">
+                            <p>
+                                Choose you beans:
+                            </p>
+                            <p>
+                                <select name="beans">
+                                    <option value="House Blend">House Blend</option>
+                                    <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+                                    <option value="Guatemala">Organic Guatemala</option>
+                                    <option value="Kenya">Kenya</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="tablerow">
+                            <p>
+                                Type:
+                            </p>
+                            <p>
+                                <input type="radio" name="beantype" value="whole">Whole bean<br>
+                                <input type="radio" name="beantype" value="ground" checked>Ground
+                            </p>
+                        </div>
+                        <div class="tablerow">
+                            <p>
+                                Extras:
+                            </p>
+                            <p>
+                                <input type="checkbox" name="extras[]" value="giftwrap">Gift Wrap<br>
+                                <input type="checkbox" name="extras[]" value="catalog" checked>Include catalog with order
+                            </p>
+                        </div>
+                        <div class="tablerow">
+                            <p>
+                                Number of bags:
+                            </p>
+                            <p>
+                                <input type="number" name="bags" max="10" min="1">
+                            </p>
+                        </div>
+                        <div class="tablerow">
+                            <p>
+                                Must arrive by:
+                            </p>
+                            <p>
+                                <input type="date" name="date"> 
+                            </p>
+                        </div>
+                        <div class="tablerow">
+                            <p class="heading">
+                                Ship to: 
+                            </p>
+                            <p></p>
+                        </div>
+                        <div class="tablerow">
+                            <p>Name:</p>
+                            <p><input type="text" name="name" required></p>
+                        </div>
+                        <div class="tablerow">
+                            <p>Address:</p>
+                            <p><input type="text" name="address" required></p>
+                        </div>
+                        <div class="tablerow">
+                            <p>City:</p>
+                            <p><input type="text" name="city" required></p>
+                        </div>
+                        <div class="tablerow">
+                            <p>State:</p>
+                            <p><input type="text" name="state" required></p>
+                        </div>
+                        <div class="tablerow">
+                            <p>Zipcode:</p>
+                            <p><input type="text" name="zip" required></p>
+                        </div>
+                        <div class="tablerow">
+                            <p>Phone:</p>
+                            <p><input type="tel" name="phone" required></p>
+                        </div>
+                        <div class="tablerow">
+                            <p>Customer comments:</p>
+                            <p><textarea name="comments" rows="10" cols="56" placeholder="Enter comments here"></textarea></p>
+                        </div>
+                        <div class="tablerow">
+                            <p></p>
+                            <p><input type="submit" value="Order Now"></p>
+                        </div>
+                    </form>
+                </section>
+        
+                <aside>
+                <p class="beanheading">
+                    <img src="images/bag.gif" alt="Bean Machine Bag">
+                    <br> Order online at <a href="form.html">Bean Machine</a> <br>
+                    <span class="slogan">
+                        FAST <br>
+                        FRESH <br>
+                        TO YOUR DOOR <br>
+                    </span>
+                </p>
+                <p>
+                    Why wait? You can order all our fine coffees right from the Internet with our new, automated Bean Machine. How does it work? Just click on the Bean Machine link, enter your order, and behind the scenes, your coffee is roasted, ground (if you want), packaged, and shipped to your door.
+                </p>
+                </aside>
+        
+        </div>
+        </div>
+        
+        <div id="coupon">
+            <a href="freecoffee.html" title="Click here for your Free Coffee">
+            <img src="images/ticket.gif" alt="Coupon link">
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2012, Staerbuzz Coffee
+            <br> All trademarks and registered trademarks appearing on
+            this site are the property of their respective owners.
+        </footer>
+    </body>
+</html>
