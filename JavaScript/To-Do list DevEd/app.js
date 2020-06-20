@@ -1,29 +1,29 @@
-// const hero = document.querySelector(".hero");
-// const logo = document.querySelector("#logo");
-// const slider = document.querySelector(".slider");
-// const hamburger = document.querySelector(".hamburger");
-// const headline = document.querySelector(".headline");
-// const form = document.querySelector("#form");
+const hero = document.querySelector(".hero");
+const logo = document.querySelector("#logo");
+const slider = document.querySelector(".slider");
+const hamburger = document.querySelector(".hamburger");
+const headline = document.querySelector(".headline");
+const form = document.querySelector("#form");
 
-// const tl = gsap.timeline();
+const tl = gsap.timeline();
 
-// tl.fromTo(hero, 1, { height: "0%" }, { height: "90%", ease: Power2.easeInOut })
-//   .fromTo(
-//     hero,
-//     1.2,
-//     { width: "100%" },
-//     { width: "85%", ease: Power2.easeInOut }
-//   )
-//   .fromTo(
-//     slider,
-//     1.2,
-//     { x: "-100%" },
-//     { x: "0%", ease: Power2.easeInOut },
-//     "-=1.2"
-//   )
-//   .fromTo(logo, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5")
-//   .fromTo(hamburger, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5")
-//   .fromTo(form, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5");
+tl.fromTo(hero, 1, { height: "0%" }, { height: "90%", ease: Power2.easeInOut })
+  .fromTo(
+    hero,
+    1.2,
+    { width: "100%" },
+    { width: "85%", ease: Power2.easeInOut }
+  )
+  .fromTo(
+    slider,
+    1.2,
+    { x: "-100%" },
+    { x: "0%", ease: Power2.easeInOut },
+    "-=1.2"
+  )
+  .fromTo(logo, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5")
+  .fromTo(hamburger, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5")
+  .fromTo(form, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5");
 
 //Selectors
 
@@ -39,7 +39,7 @@ toDoButton.addEventListener("click", addToDo);
 
 function addToDo(event) {
   //Prevent empty default from submitting
-  event.preventDefault();
+  // event.preventDefault();
   // Creating ToDO DIV
   const toDoDiv = document.createElement("div");
   toDoDiv.classList.add("todo");
