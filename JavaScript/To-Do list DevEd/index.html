@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get It Done</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- This is coming from font awesome cdnjs.com for referencing and allowing JS to use FA icons -->
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h3 id="logo">To Do List</h3>
+        <!-- <i class="fas fa-clipboard-check"></i> -->
+        <img
+          src="clipboard-check-solid.svg"
+          alt="hamburger"
+          class="hamburger"
+        />
+      </nav>
+
+      <section>
+        <div class="hero">
+          <img src="toDO-med.jpg" alt="toDo list" />
+          <h1 class="headline">
+            Get It <br />
+            Done!
+          </h1>
+        </div>
+      </section>
+    </header>
+
+    <div class="slider"></div>
+
+    <form id="form">
+      <input type="text" class="todo-input" />
+      <button class="todo-button" style="button">
+        <i class="fas fa-plus-square"></i>
+      </button>
+    </form>
+
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.js"
+      integrity="sha256-YK+Ef4F0BVWS5rl7wipm4K7qTtY3bgC5lr6DT9Rz14A="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/fontawesome.min.js"
+      integrity="sha256-fjQmECvnpgwxO4TyEkO7CJeu97Lu+JKoGDCNEVDs7X0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

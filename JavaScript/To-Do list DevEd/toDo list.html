@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- This came from google fonts from a font I selected -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <!-- This is coming from font awesome cdnjs.com for referencing and allowing JS to use FA icons -->
+    <link type="text/css" rel="stylesheet" href="toDo.css" />
+    <title>To Do list</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h3 id="logo">Get It Done</h3>
+        <i id="hamburger" class="fas fa-clipboard-check"></i>
+      </nav>
+    </header>
+
+    <div class="slider"></div>
+
+    <section>
+      <div id="mainimg">
+        <img src="toDO-med.jpg" alt="toDo-list" />
+        <h1 class="headline">To Do list</h1>
+      </div>
+    </section>
+
+    <form>
+      <input type="text" class="toDo-input" />
+      <button class="toDo-button" style="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <button class="toDO-button" style="submit">
+        <i class="fas fa-trash"></i>
+      </button>
+    </form>
+
+    <div class="toDo-container">
+      <ul class="toDo-list"></ul>
+    </div>
+
+    <!-- This below contains all the scripts used -->
+
+    <script src="toDo.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

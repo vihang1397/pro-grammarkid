@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheriting Prototypes</title>
+  </head>
+  <body>
+    <script>
+      // Creating of Object Constructor
+      function Dog(name, breed, weight) {
+        this.name = name;
+        this.breed = breed;
+        this.weight = weight;
+      }
+
+      // Prototyping properties to inherit by Dog constructor
+
+      Dog.prototype.species = "Canine";
+      Dog.prototype.bark = function () {
+        if (this.weight >= 25) {
+          console.log(this.name + " says WOOF WOOF!!");
+        } else {
+          console.log(this.name + " says Yip Yip!");
+        }
+      };
+      Dog.prototype.run = function () {
+        console.log("running");
+      };
+      Dog.prototype.wag = function () {
+        console.log("wag wag wag :)");
+      };
+      Dog.prototype.sitting = false;
+      Dog.prototype.sit = function () {
+        if (this.sitting) {
+          console.log(this.name + " is already sitting.");
+        } else {
+          this.sitting = true;
+          console.log(this.name + " is now sitting!");
+        }
+      };
+
+      // Constructing pupperino object using Dog constructor
+
+      var pupperino = new Dog("Pupperino", "Labradoodle", 24);
+
+      // Invoking properties inherited by prototyping
+
+      pupperino.bark();
+      pupperino.run();
+      pupperino.wag();
+      pupperino.sit();
+      pupperino.sit();
+
+      // Creating a new ShowDog constructor and giving it inheritence from Dog
+
+      function ShowDog(name, breed, weight, handler) {
+        Dog.call(this, name, breed, weight);
+        this.weight = weight;
+      }
+      //Removed the code below from function above.
+      // this.name = name;
+      // this.breed = breed;
+      // this.handler = handler;
+      //DRY : Don't Repeat Yourself.
+
+      // Making ShowDog an instance of Dog
+
+      ShowDog.prototype = new Dog();
+      ShowDog.prototype.league = "WebVille";
+      ShowDog.prototype.stack = function () {
+        console.log(this.name + "! Stack!");
+      };
+      ShowDog.prototype.gait = function (kind) {
+        console.log(this.name + " is " + kind + "ing!");
+      };
+      ShowDog.prototype.bait = function () {
+        console.log("Bait!");
+      };
+      ShowDog.prototype.constructor = ShowDog;
+
+      // Making a new ShowDog
+
+      var stella = new ShowDog("Stella", "French Bulldog", 16, "Jay Pritchett");
+
+      // Calling functions that are inherited by ShowDog prototype
+
+      stella.gait("strut");
+      stella.stack();
+      stella.bark();
+
+      console.log("Stella contructor is " + stella.constructor);
+      console.log("Pupperino contructor is " + pupperino.constructor);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My name is Mayo!</title>
+    <style>
+      h1 {
+        position: fixed;
+        top: 20px;
+        left: 468px;
+      }
+      body {
+        margin: 10px;
+      }
+      button {
+        position: fixed;
+        top: 200px;
+        left: 550px;
+        margin: 10px;
+      }
+      div {
+        position: fixed;
+        top: 225px;
+        left: 550px;
+        padding: 10px;
+      }
+    </style>
+    <script>
+      // JavaScript code here
+      window.onload = function () {
+        var count = 0;
+        var button = document.getElementById("clickme");
+        var div = document.getElementById("message");
+        button.onclick = function () {
+          count++;
+          div.innerHTML = "You clicked me " + count + " times";
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <h1>My name is Mayo!</h1>
+    <button id="clickme">Mayonaise</button>
+    <div id="message"></div>
+  </body>
+</html>

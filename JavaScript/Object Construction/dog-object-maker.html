@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Maker</title>
+  </head>
+  <body>
+    <script>
+      function Dog(name, breed, weight) {
+        this.name = name;
+        this.breed = breed;
+        this.weight = weight;
+        this.bark = function () {
+          if (this.weight >= 25) {
+            alert(this.name + " says Woof!");
+          } else {
+            alert(this.name + " says Yip!");
+          }
+        };
+      }
+
+      var fluffy = new Dog("Fluffy", "Alaskan Malamute", 25);
+      var zoro = new Dog("Zoro", "Labrador Retreiver", 32);
+      var elDiablo = new Dog("El Diablo", "Chihuahua", 9);
+      var elNino = new Dog("El Nino", "Pomeranian Mix", 8);
+      var dogs = [fluffy, zoro, elDiablo, elNino];
+
+      for (var i = 0; i < dogs.length; i++) {
+        dogs[i].bark();
+        var size = "small";
+        if (dogs[i].weight > 10) {
+          var size = "large";
+        }
+        console.log(dogs[i].name + " is a " + size + " " + dogs[i].breed);
+      }
+    </script>
+  </body>
+</html>

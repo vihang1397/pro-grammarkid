@@ -38,7 +38,7 @@ var chevy = {
     mileage: 1021
 }
 
-var models = [taxi, cadi, fiat, chevy];
+// var models = [taxi, cadi, fiat, chevy];
 
 function prequal(car) {
     if (car.mileage > 10000) {
