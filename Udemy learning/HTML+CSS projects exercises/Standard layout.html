@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Normal standard layout</title>
+    <style type="text/css">
+      body {
+        background-color: rgb(57, 57, 199);
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        /* box-sizing: border-box; */
+      }
+
+      h1 {
+        color: whitesmoke;
+      }
+
+      header,
+      nav,
+      section,
+      footer {
+        font-size: large;
+        color: white;
+        border: 1px white solid;
+        border-radius: 4px;
+        /* margin-bottom: 10px; */
+      }
+
+      /* header {
+        position: fixed;
+        padding: 10px;
+        top: 60px;
+        align-items: center;
+        height: 45px;
+        width: 1350px;
+        box-sizing: border-box;
+      }
+      footer {
+        position: fixed;
+        bottom: 10px;
+        align-items: center;
+        height: 45px;
+        width: 1350px;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      nav {
+        position: fixed;
+        left: 10px;
+        top: 115px;
+        bottom: 65px;
+        width: 220px;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      section {
+        position: fixed;
+        left: 240px;
+        top: 115px;
+        bottom: 65px;
+        width: 1115px;
+        box-sizing: border-box;
+        padding: 10px;
+      } */
+      header,
+      footer {
+        padding: 20px 0px;
+      }
+      nav,
+      section {
+        padding: 200px 0px;
+      }
+
+      .container {
+        width: 960px;
+        margin: 0 auto;
+      }
+
+      nav,
+      section,
+      footer {
+        float: left;
+      }
+
+      nav {
+        width: 220px;
+        margin: 10px 10px 10px 0px;
+      }
+
+      section {
+        width: 725px;
+        margin: 10px 0px 10px 0px;
+      }
+
+      footer {
+        width: 960px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Standard page layout</h1>
+      <header>Header</header>
+      <nav>Navigation</nav>
+      <section>Content</section>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

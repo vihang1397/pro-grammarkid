@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise COntact form</title>
+  </head>
+  <body>
+    <h1>Contact us!</h1>
+    <h3>We wanna hear back from you.</h3>
+    <hr />
+    <form action="results.html" method="POST">
+      <table width="50%">
+        <tr>
+          <td align="right">
+            <label for="firstName">First Name: </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter first name"
+              name="firstName"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="lastName">Last Name: </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your last name"
+              name="lastName"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="eMail">E-mail address: </label>
+          </td>
+          <td>
+            <input
+              type="email"
+              placeholder="Enter e-mail address here"
+              name="eMail"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="subject">Subject: </label>
+          </td>
+          <td>
+            <input type="text" placeholder="Enter subject" name="subject" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="comments">Comments: </label>
+          </td>
+          <td>
+            <textarea
+              name="comments"
+              rows="10"
+              cols="56"
+              placeholder="Enter comments here"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <input type="submit" />
+          </td>
+          <td>
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
