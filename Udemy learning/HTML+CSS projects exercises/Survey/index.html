@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Page</title>
+    <style>
+      body {
+        color: rgb(59, 59, 59);
+        margin: 0 auto;
+        font-size: large;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      header {
+        background-color: rgb(59, 59, 59);
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      section {
+        padding: 30px;
+        margin: auto, auto 30px auto;
+        text-align: center;
+      }
+
+      form input[type="text"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+      }
+
+      footer {
+        background-color: rgb(59, 59, 59);
+        color: white;
+        text-align: center;
+        clear: both;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Survey.com</h1></header>
+    <section>
+      <h1>Submit your survey today!</h1>
+      <form action="POST">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" />
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" />
+        <p>
+          <label for="colorselection">Choose color:</label>
+          <select id="colorselection">
+            <optgroup label="Cold Colors">
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="violet">Violet</option>
+            </optgroup>
+            <optgroup label="Warm Colors">
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          <label for="php-checkbox">PHP</label>
+          <input
+            type="checkbox"
+            name="php-checkbox"
+            id="php-checkbox"
+            checked=""
+          />
+          <label for="html-checkbox">HTML</label>
+          <input type="checkbox" name="html-checkbox" id="html-checkbox" />
+          <label for="css-checkbox">CSS</label>
+          <input type="checkbox" name="css-checkbox" id="css-checkbox" />
+          <label for="js-checkbox">JavaScript</label>
+          <input type="checkbox" name="js-checkbox" id="js-checkbox" />
+        </p>
+        <input type="submit" />&nbsp; &nbsp;
+        <input type="reset" />
+      </form>
+    </section>
+    <footer>Copyright © 2020, Victor Idnani</footer>
+  </body>
+</html>
